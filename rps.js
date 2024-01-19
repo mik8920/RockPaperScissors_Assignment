@@ -41,6 +41,8 @@ const newGameClick = (e) => {
   playerScoreMessage.textContent = "";
   playerScoreMessage.style.color = "white";
   computerScoreMessage.style.color = "white";
+  result.style.color = "white";
+  result.style.fontWeight = "";
   gameOver = false;
   buttonClick();
 };
