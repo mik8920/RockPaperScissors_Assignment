@@ -1,0 +1,135 @@
+body {
+  background-color: rgba(0, 0, 0, 0.884);
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  color: rgba(75, 230, 217, 0.904);
+  text-shadow: 4px 4px 8px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.headline-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 30px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+  border: 1px solid rgba(149, 248, 255, 0.349);
+  border-radius: 5px;
+}
+
+.rock-container {
+  border: 3px solid rgba(15, 198, 211, 0.822);
+  border-radius: 10px;
+}
+
+.paper-container {
+  border: 3px solid rgba(235, 50, 50, 0.822);
+  border-radius: 10px;
+}
+
+.scissors-container {
+  border: 3px solid rgba(114, 230, 85, 0.822);
+  border-radius: 10px;
+}
+
+#scissorsBtn {
+  background-image: url(images/scissors.png);
+  background-size: 100%;
+  background-position: center;
+  padding: 100px 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: transparent;
+  font-size: 5px;
+}
+
+#paperBtn {
+  background-image: url(images/paper.png);
+  background-size: 100%;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 100px 100px;
+  color: transparent;
+  font-size: 5px;
+}
+
+#rockBtn {
+  background-image: url(images/rock.png);
+  background-size: 100%;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 100px 100px;
+  border-color: black;
+  color: transparent;
+  font-size: 5px;
+}
+
+.result-style {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(60, 153, 110, 0.836);
+  text-transform: uppercase;
+}
+
+.score-style {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(135, 170, 154, 0.836);
+  text-transform: uppercase;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 100px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 80px;
+}
+
+.new-game-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#newGameBtn {
+  font-size: 30px;
+  padding: 40px 40px;
+  border: 2px solid rgb(97, 167, 162);
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgba(72, 214, 207, 0.801);
+  text-shadow: 1px 1px 1px;
+  background-color: rgba(0, 0, 0, 0.267);
+  margin-top: 21px;
+  text-transform: uppercase;
+}
+
+.main-container {
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 100px;
+}
