@@ -91,16 +91,16 @@ h1 {
   flex-direction: column-reverse;
   font-size: 30px;
   font-weight: bold;
-  color: rgba(135, 170, 154, 0.836);
+  color: rgba(215, 228, 227, 0.836);
   text-transform: uppercase;
 }
 
 .score-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.267);
-  padding: 100px;
+  padding-bottom: 100px;
 }
 
 .result-container {
@@ -114,6 +114,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 #newGameBtn {
@@ -125,11 +126,29 @@ h1 {
   color: rgba(72, 214, 207, 0.801);
   text-shadow: 1px 1px 1px;
   background-color: rgba(0, 0, 0, 0.267);
-  margin-top: 21px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
 .main-container {
   background-color: rgba(0, 0, 0, 0.267);
   padding: 100px;
+}
+
+.move-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding-top: 80px;
+}
+
+.playerMove,
+.computerMove {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(135, 170, 154, 0.836);
+  text-transform: uppercase;
 }

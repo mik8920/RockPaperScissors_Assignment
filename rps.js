@@ -5,15 +5,17 @@ const newGameButton = document.getElementById("newGameBtn");
 const result = document.querySelector(".result");
 const playerScoreMessage = document.querySelector(".playerScore");
 const computerScoreMessage = document.querySelector(".computerScore");
+const computerMove = document.querySelector(".computerMove");
+const playerMove = document.querySelector(".playerMove");
 result.classList.add("result-style");
 playerScoreMessage.classList.add("score-style");
 computerScoreMessage.classList.add("score-style");
 newGameButton.classList.add("newGame-style");
 let gameOver = false;
 
-let rock = rockButton.textContent;
-let paper = paperButton.textContent;
-let scissors = scissorsButton.textContent;
+const rock = rockButton.textContent;
+const paper = paperButton.textContent;
+const scissors = scissorsButton.textContent;
 
 const choice = [rock, paper, scissors];
 const getComputerChoice = () => {
@@ -39,6 +41,8 @@ const newGameClick = (e) => {
   result.textContent = "";
   computerScoreMessage.textContent = "";
   playerScoreMessage.textContent = "";
+  playerMove.textContent = "";
+  computerMove.textContent = "";
   playerScoreMessage.style.color = "white";
   computerScoreMessage.style.color = "white";
   result.style.color = "white";
@@ -83,6 +87,8 @@ const gameRound = (playerSelection, computerSelection) => {
     (playerSelection === paper && computerSelection === scissors) ||
     (playerSelection === scissors && computerSelection === rock)
   ) {
+    playerMove.textContent = `Player move: ${playerSelection}`;
+    computerMove.textContent = `Computer move: ${computerSelection}`;
     result.textContent = `You lose, ${computerSelection} beats ${playerSelection}!`;
     computerScore++;
     computerScoreMessage.textContent = `Computer score: ${computerScore}`;
@@ -101,6 +107,8 @@ const gameRound = (playerSelection, computerSelection) => {
     (playerSelection === paper && computerSelection === rock) ||
     (playerSelection === scissors && computerSelection === paper)
   ) {
+    playerMove.textContent = `Player move: ${playerSelection}`;
+    computerMove.textContent = `Computer move: ${computerSelection}`;
     result.textContent = `You win, ${playerSelection} beats ${computerSelection}!`;
     playerScore++;
     playerScoreMessage.textContent = `Player score: ${playerScore}`;
@@ -115,6 +123,8 @@ const gameRound = (playerSelection, computerSelection) => {
     }
     return;
   } else {
+    playerMove.textContent = `Player move: ${playerSelection}`;
+    computerMove.textContent = `Computer move: ${computerSelection}`;
     result.textContent = `It's a tie, ${computerSelection} is equal to ${playerSelection}!`;
     return;
   }
