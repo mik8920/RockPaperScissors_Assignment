@@ -43,10 +43,9 @@ const newGameClick = (e) => {
   playerScoreMessage.textContent = "";
   playerMove.textContent = "";
   computerMove.textContent = "";
-  playerScoreMessage.style.color = "white";
-  computerScoreMessage.style.color = "white";
-  result.style.color = "white";
-  result.style.fontWeight = "";
+  playerScoreMessage.style.color = "	#d7e4e3";
+  computerScoreMessage.style.color = "	#d7e4e3";
+  result.style.color = "#3c996e";
   gameOver = false;
   buttonClick();
 };
@@ -96,7 +95,6 @@ const gameRound = (playerSelection, computerSelection) => {
       gameOver = true;
       result.textContent = "Computer is the winner, game over!";
       result.style.color = "gold";
-      result.style.fontWeight = "bold";
       computerScoreMessage.style.color = "red";
 
       return;
@@ -116,7 +114,6 @@ const gameRound = (playerSelection, computerSelection) => {
       gameOver = true;
       result.textContent = "Player is the winner, congratulations!";
       result.style.color = "gold";
-      result.style.fontWeight = "bold";
       playerScoreMessage.style.color = "red";
 
       return;
