@@ -47,7 +47,6 @@ const newGameClick = (e) => {
   computerScoreMessage.style.color = "	#d7e4e3";
   result.style.color = "#3c996e";
   gameOver = false;
-  buttonClick();
 };
 
 rockButton.addEventListener("mouseover", () => {
